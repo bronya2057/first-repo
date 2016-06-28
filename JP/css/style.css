@@ -51,9 +51,10 @@ input[type="submit"]
 }
 #results
 {
-    backface:#f06226;
+    background:#f06226;
     padding:10px;
     margin: 10px 0;
+    
 }
 #results span{
     color:#000;
