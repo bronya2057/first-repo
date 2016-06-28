@@ -1,6 +1,7 @@
 /*global alert*/
 /*global console*/
 /*global document*/
+/*jshint -W061 */
 
 /*alert("hello");
 console.log("hello");
@@ -16,4 +17,17 @@ function submitAnswers()
     var q3=document.forms.quizForm.q3.value;
     var q4=document.forms.quizForm.q4.value;
     var q5=document.forms.quizForm.q5.value;
+    //var q1=document.forms[quizForm][q1].value;
+    
+    //validation
+    
+    
+    for(var i=1;i<=total;i++)
+        {
+            if(eval('q'+i)===null || eval('q'+i)==="")
+            {
+                alert('you\'ve missed question'+i);
+                return false;
+            }
+        }
 }
